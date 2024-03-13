@@ -1,10 +1,16 @@
 function showAnswer(response) {
-  let poem = document.querySelector(".poem-container");
-  poem.innerHTML = response.data.answer;
+  new Typewriter(".poem-container", {
+    strings: response.data.answer,
+    autoStart: true,
+    delay: 20,
+  });
 }
 
 function getInputAnswer(event) {
   event.preventDefault();
+
+  let hiddenElement = document.querySelector(".poem-container");
+  hiddenElement.classList.remove("hidden");
 
   let inputValue = document.querySelector("#search-input");
   inputValue = inputValue.value;

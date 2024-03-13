@@ -46,6 +46,10 @@ h1 {
   box-shadow: 7px 7px 7px rgba(97, 98, 99, 0.218);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
