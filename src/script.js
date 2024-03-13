@@ -1,3 +1,8 @@
+function showAnswer(response) {
+  let poem = document.querySelector(".poem-container");
+  poem.innerHTML = response.data.answer;
+}
+
 let prompt = "How is the weather in London today";
 let context =
   "As you are very knowledgeable in weather condition, please help me with this question";
