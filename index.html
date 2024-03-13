@@ -8,16 +8,21 @@
   </head>
   <body>
     <h1>AI Text Generator</h1>
-    <form>
-      <input
-        type="search"
-        placeholder="How can the AI help you?"
-        required
-        autocomplete="off"
-      />
-      <input type="submit" />
-    </form>
-    <div>Answer</div>
+    <div id="form-container">
+      <form>
+        <input
+          type="search"
+          placeholder="How can the AI help you?"
+          required
+          autocomplete="off"
+          id="search-input"
+        />
+        <input type="submit" id="submit-input" />
+      </form>
+    </div>
+    <div class="poem-container">
+      <div>Answer</div>
+    </div>
     <footer>
       This project was coded by
       <a href="https://www.linkedin.com/in/gabriela-agostinho-378b67207/"
