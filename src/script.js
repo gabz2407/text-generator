@@ -2,7 +2,7 @@ function showAnswer(response) {
   new Typewriter(".poem-container", {
     strings: response.data.answer,
     autoStart: true,
-    delay: 20,
+    delay: 10,
     cursor: "",
   });
 }
@@ -17,8 +17,9 @@ function getInputAnswer(event) {
   let inputValue = document.querySelector("#search-input");
   inputValue = inputValue.value;
 
-  let prompt = `${inputValue}`;
-  let context = `Add in the end of each answer "<b> AI Text Generator</b>"`;
+  let prompt = `Provide a recipe about ${inputValue}`;
+  let context = `You are a well known food expert, you can show me your skills about world foods. Please answer in this format:<h2>Recipe Name</h2><br /> <h4>Ingredients:</h4><ul><li>Ingredients list</li></ul><h4>Instructions:</h4><p></p>`;
+
   let apiKey = "8bc029ce07bb99a925obf42d966t543f";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 

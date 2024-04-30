@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Text Generator</title>
+    <title>Recipes Generator</title>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
-    <h1>AI Text Generator</h1>
-
-    <form id="form-container">
-      <input
-        type="search"
-        placeholder="How can the AI help you?"
-        required
-        autocomplete="off"
-        id="search-input"
-      />
-      <input type="submit" id="submit-input" />
-    </form>
-
+    <header>
+      <h1>Recipe Generator</h1>
+      <form id="form-container">
+        <input
+          type="search"
+          placeholder="Search"
+          required
+          autocomplete="off"
+          id="search-input"
+        />
+        <input type="submit" id="submit-input" />
+      </form>
+    </header>
     <div class="poem-container hidden"></div>
     <footer>
       This project was coded by
