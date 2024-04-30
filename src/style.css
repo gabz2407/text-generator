@@ -1,19 +1,20 @@
 body {
-  background-image: url("/src/12418402-Cooking-background-empty-rustic-baking-sheet-and-italian-ingredients.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("/src/French-Guy-Cooking-YouTube-Channel-Background-Art-copy.jpeg");
+  background-repeat: repeat;
   background-color: rgb(203, 154, 154);
   font-family: sans-serif;
 }
 
 .header {
-  background-color: #a1725ead;
+  background-color: #f9d8a0a5;
   border-radius: 10px;
   width: 60%;
+  color: rgb(0, 0, 0);
+  margin-top: 120px;
 }
 
 .poem-container {
-  background-color: white;
+  background-color: #f9d8a0a5;
   width: 61%;
   margin: 20px auto 0 auto;
   padding: 30px;
@@ -21,7 +22,7 @@ body {
   box-shadow: 7px 7px 7px rgba(97, 98, 99, 0.218);
   font-size: 14px;
   line-height: 1.5;
-  color: rgb(83, 85, 87);
+  color: black;
 }
 
 .poem-container b {
@@ -33,13 +34,25 @@ body {
 }
 
 footer {
+  background-color: #f9d8a0a5;
+  width: fit-content;
   text-align: center;
   font-size: 12px;
-  margin-top: 30px;
-  color: rgba(255, 255, 255, 0.802);
+  margin: 30px auto;
+  color: rgba(0, 0, 0, 0.802);
 }
 
 footer a {
   text-decoration: none;
-  color: #deaa93;
+  color: #572100;
+}
+
+@media (max-width: 767px) {
+  .poem-container {
+    width: 100%;
+  }
+
+  .header {
+    width: 95%;
+  }
 }
