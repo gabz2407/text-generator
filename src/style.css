@@ -7,8 +7,7 @@ body {
 }
 
 .header {
-  margin: 320px auto 0 auto;
-  background-color: white;
+  background-color: #a1725ead;
   border-radius: 10px;
   width: 60%;
 }
@@ -42,5 +41,5 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #f1c28ca9;
+  color: #deaa93;
 }
