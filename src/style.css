@@ -6,48 +6,17 @@ body {
   font-family: sans-serif;
 }
 
-header {
-  margin: 320px auto;
+.header {
+  margin: 320px auto 0 auto;
   background-color: white;
-  width: 800px;
   border-radius: 10px;
-}
-
-h1 {
-  text-align: center;
-  padding-top: 20px;
-}
-
-#form-container {
-  margin: 10px auto 25px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 7px 7px 7px rgba(97, 98, 99, 0.218);
-  display: flex;
-}
-
-#search-input {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid rgb(122, 127, 131);
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-#submit-input {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid rgb(88, 31, 31);
-  margin-left: 3px;
-  font-size: 12px;
-  background-color: rgb(88, 31, 31);
-  color: white;
+  width: 60%;
 }
 
 .poem-container {
   background-color: white;
-  width: 580px;
-  margin: 10px auto;
+  width: 61%;
+  margin: 20px auto 0 auto;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 7px 7px 7px rgba(97, 98, 99, 0.218);

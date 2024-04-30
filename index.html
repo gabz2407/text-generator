@@ -15,21 +15,29 @@
     />
   </head>
   <body>
-    <header>
-      <h1>Recipe Generator</h1>
-      <form id="form-container">
-        <input
-          type="search"
-          placeholder="Search"
-          required
-          autocomplete="off"
-          id="search-input"
-        />
-        <input type="submit" id="submit-input" />
-      </form>
-    </header>
+    <header class="container-fluid">
+      <div class="header">
+        <h1 class="text-center pt-3">Recipe Generator</h1>
+        <form id="form-container" class="d-flex form-inline p-3">
+          <input
+            type="search"
+            placeholder="Search"
+            required
+            autocomplete="off"
+            id="search-input"
+           class="form-control" 
+          />
+          <input
+            type="submit"
+            id="submit-input"
+            class="btn btn-secondary"
+          />
+        </form>
+      </div>
+    <section class="container-fluid">
     <div class="poem-container hidden"></div>
-    <footer>
+    </section>
+    <footer class="mb-3">
       This project was coded by
       <a href="https://www.linkedin.com/in/gabriela-agostinho-378b67207/"
         >Gabriela Agostinho</a
