@@ -12,7 +12,7 @@ function getInputAnswer(event) {
 
   let hiddenElement = document.querySelector(".poem-container");
   hiddenElement.classList.remove("hidden");
-  hiddenElement.innerHTML = `Loading...`;
+  hiddenElement.innerHTML = `Wait a second, we are preparing your dish...`;
 
   let inputValue = document.querySelector("#search-input");
   inputValue = inputValue.value;
