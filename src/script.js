@@ -10,9 +10,9 @@ function showAnswer(response) {
 function getInputAnswer(event) {
   event.preventDefault();
 
-  let hiddenElement = document.querySelector(".poem-container");
-  hiddenElement.classList.remove("hidden");
-  hiddenElement.innerHTML = `Wait a second, we are preparing your dish...`;
+  let recipeBlock = document.querySelector(".recipe-container");
+  recipeBlock.classList.remove("hidden");
+  recipeBlock.innerHTML = `Wait a second, we are preparing your dish...`;
 
   let inputValue = document.querySelector("#search-input");
   inputValue = inputValue.value;
