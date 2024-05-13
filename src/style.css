@@ -1,20 +1,44 @@
 body {
   background-image: url("/src/healthy-eating-image.jpeg");
   background-repeat: repeat;
-  background-size: cover;
+  background-size: 100%;
   background-color: rgb(255, 255, 255);
   font-family: sans-serif;
 }
 
 .header {
-  background-color: #90b95a82;
+  background-color: #90b95aa3;
   border-radius: 10px;
   width: 60%;
   color: rgb(0, 0, 0);
   margin-top: 60px;
 }
 
-.poem-container {
+.ideas-container {
+  background-color: rgba(255, 255, 255, 0.783);
+  width: fit-content;
+  margin: 30px auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.ideas-container h2 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.option-section button {
+  background-color: #90b95aa3;
+  width: 60px;
+  height: 60px;
+}
+
+.option-section h3 {
+  font-size: 11px;
+}
+
+.recipe-container {
   background-color: #90b95aa3;
   width: 61%;
   margin: 20px auto 0 auto;
@@ -26,7 +50,7 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.poem-container b {
+.recipe-container b {
   color: rgb(74, 28, 28);
 }
 
@@ -35,13 +59,11 @@ body {
 }
 
 footer {
-  text-align: center;
-  background-color: white;
-  margin-top: 50px;
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.802);
+  background-color: rgba(255, 255, 255, 0.783);
   width: max-content;
   margin: 50px auto 5px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.802);
   border-radius: 5px;
 }
 
@@ -55,8 +77,8 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
-  .poem-container {
-    width: 100%;
+  .recipe-container {
+    width: 95%;
   }
 
   .header {
