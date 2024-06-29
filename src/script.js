@@ -8,28 +8,6 @@ function showAnswer(response) {
   });
 }
 
-function getInputAnswer(event) {
-  event.preventDefault();
-
-  let recipeBlock = document.querySelector(".recipe-container");
-  recipeBlock.classList.remove("hidden");
-  recipeBlock.innerHTML = `Wait a second, we are preparing your dish...`;
-
-  let inputValue = document.querySelector("#search-input");
-  inputValue = inputValue.value;
-
-  let prompt = `Provide a recipe about ${inputValue}`;
-  let context = `You are a well known food expert, you can show me your skills about world foods. Please answer in this format:<h3>Recipe Name</h3><br /> <h5>Ingredients:</h5><ul><li>Ingredients list</li></ul><h5>Instructions:</h5><p></p>`;
-
-  let apiKey = "8bc029ce07bb99a925obf42d966t543f";
-  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-
-  axios.get(apiUrl).then(showAnswer);
-}
-
-let searchEngine = document.querySelector("#form-container");
-searchEngine.addEventListener("submit", getInputAnswer);
-
 function searchPrompt(keyword) {
   let recipeBlock = document.querySelector(".recipe-container");
   recipeBlock.classList.remove("hidden");
@@ -43,6 +21,18 @@ function searchPrompt(keyword) {
 
   axios.get(apiUrl).then(showAnswer);
 }
+
+function getInputAnswer(event) {
+  event.preventDefault();
+
+  let inputValue = document.querySelector("#search-input");
+  inputValue = inputValue.value;
+
+  searchPrompt(inputValue);
+}
+
+let searchEngine = document.querySelector("#form-container");
+searchEngine.addEventListener("submit", getInputAnswer);
 
 // out of ideas buttons
 function searchVegan() {
